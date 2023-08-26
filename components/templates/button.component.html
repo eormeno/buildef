@@ -1,0 +1,18 @@
+<template name="AWButton">
+
+   <param name="text"      type="string" />
+   <param name="action"    type="string" readonly="true" />
+   <param name="primary"   type="boolean" default="true" />
+   <param name="disabled"  type="boolean" default="false" />
+   <param name="formId"   type="string" readonly="true" />
+
+   <if.true var="primary">
+      <set var="class" value="btn btn-primary" />
+      <else>
+         <set var="class" value="btn btn-secondary" />
+      </else>
+   </if.true>
+
+   <button id="id" class="class" action="action" primary="primary" disabled="disabled" formId="formId">text</button>
+   
+</template>

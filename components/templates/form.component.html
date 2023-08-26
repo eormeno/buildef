@@ -1,0 +1,21 @@
+<template name="AWForm">
+
+	<param name="title" type="string" />
+	<param name="submit" type="string" readonly="true" />
+	<param name="elements" type="array" readonly="true" />
+	<param name="submitButton" type="Button" readonly="true" />
+	<param name="class" type="string" default="form" readonly="true" />
+
+	<form class="form">
+		<h4>title</h4>
+		<div class="form-row">
+			<foreach var="element" in="elements">
+				<div class="form-group col-md-6">
+					<container for="element" />
+				</div>
+			</foreach>
+		</div>
+		<hr />
+		<container for="submitButton" />
+	</form>
+</template>

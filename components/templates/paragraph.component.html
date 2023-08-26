@@ -1,0 +1,23 @@
+<template name="AWParagraph">
+
+   <param name="level" type="number" default="0" readonly="true" />
+   <param name="text" type="string" />
+
+   <div>
+      <if.equals var="level" value="0">
+         <p id="id">text</p>
+      </if.equals>
+      <if.equals var="level" value="1">
+         <h1 id="id">text</h1>
+      </if.equals>
+      <if.equals var="level" value="2">
+         <h2 id="id">text</h2>
+      </if.equals>
+      <if.equals var="level" value="3">
+         <h3 id="id">text</h3>
+      </if.equals>
+      <if.greater var="level" value="3">
+         <h4 id="id">text</h4>
+      </if.greater>
+   </div>
+</template>

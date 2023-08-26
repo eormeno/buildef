@@ -1,0 +1,42 @@
+<template name="AWInput">
+
+   <param name="name" type="string" readonly="true" />
+   <param name="label" type="string" default="" />
+   <param name="help" type="string" default="" />
+   <param name="placeholder" type="string" default="" />
+   <param name="value" type="string" default="" />
+   <param name="required" type="boolean" default="false" />
+   <param name="disabled" type="boolean" default="false" />
+   <param name="readonly" type="boolean" default="false" />
+   <param name="type" type="string" default="input" readonly="true" />
+   <param name="formId"   type="string" readonly="true" />
+
+   <set var="divClass" value="mb-3" />
+   <set var="inputClass" value="form-control" />
+   <set var="labelClass" value="form-label" />
+
+   <if.equals var="type" value="checkbox">
+      <set var="divClass" value="mb-3 form-check" />
+      <set var="inputClass" value="form-check-input" />
+      <set var="labelClass" value="form-check-label" />
+   </if.equals>
+
+   <div class="divClass">
+
+      <if.not.null var="label">
+         <label for="id" class="labelClass">label</label>
+      </if.not.null>
+
+      <if.not.null var="help">
+         <set var="helpId" value="id_+_help" />
+         <input name="name" type="type" class="inputClass" id="id" value="value" export="value" placeholder="placeholder" aria-describedby="helpId"
+            readonly="readonly" required="required" disabled="disabled" formId="formId" />
+         <div id="helpId" class="form-text" text="help"></div>
+         <else>
+            <input name="name" type="type" class="inputClass" id="id" value="value" placeholder="placeholder" readonly="readonly"
+               required="required" disabled="disabled" formId="formId"/>
+         </else>
+      </if.not.null>
+
+   </div>
+</template>
