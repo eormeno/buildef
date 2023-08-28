@@ -1,1 +1,1 @@
-<x-logo size=12 color="#f3f4f6" />
+<x-logo2 size=12 color="#f3f4f6" />
