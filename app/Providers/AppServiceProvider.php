@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Plugins\CustomBladePlugin;
 use App\Services\SessionManagerService;
 use Illuminate\Support\ServiceProvider;
 
@@ -24,6 +25,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        CustomBladePlugin::register();
     }
 }

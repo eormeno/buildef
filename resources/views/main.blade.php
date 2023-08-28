@@ -26,7 +26,8 @@
     </div>
     <!-- Status Bar -->
     <div class="bg-slate-300 p-2 fixed bottom-0 left-0 right-0">
-        <p id="version" class="text-center text-slate-600 text-xs font-light"></p>
+        
+        <p id="versions" class="text-center text-slate-600 text-xs font-light">@miDirectiva('version')</p>
     </div>
 
     <script type="module" src="{{ asset('js/button.component.js') }}"></script>
