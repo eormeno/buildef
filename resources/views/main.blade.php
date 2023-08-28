@@ -16,7 +16,7 @@
     <div class="min-h-screen flex flex-col items-center pt-6 bg-gray-100 dark:bg-gray-900">
         <div>
             <a href="/">
-                <x-logo2 size=24 color="#888888" />
+                <x-logo-circular size=24 color="#888888" />
             </a>
         </div>
 
