@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
 	public function boot(): void
 	{
 		$this->app->bind('console-output', function ($app) {
-			return new ConsoleOutput();
+			return new \Symfony\Component\Console\Output\ConsoleOutput();
 		});
 	}
 }
