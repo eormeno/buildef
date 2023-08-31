@@ -1,0 +1,9 @@
+<input>
+    <param name="name" type="string" readonly="true" />
+    <param name="label" type="string" default="" />
+    <param name="help" type="string" default="" />
+    <param name="required" type="boolean" default="false" />
+    <param name="disabled" type="boolean" default="false" />
+    <param name="readonly" type="boolean" default="false" />
+    <param name="formId" type="string" readonly="true" />
+</input>

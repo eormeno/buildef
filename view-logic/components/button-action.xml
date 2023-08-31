@@ -1,0 +1,3 @@
+<button-action:button>
+	<param name="action" type="string" readonly="true" />
+</button-action:button>

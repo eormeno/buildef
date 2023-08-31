@@ -1,0 +1,3 @@
+<button-link:button>
+	<param name="route" type="string" />
+</button-link:button>
