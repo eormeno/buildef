@@ -1,0 +1,3 @@
+<container-form:container>
+    <param name="action" value="" required="true"/>
+</container-form:container>

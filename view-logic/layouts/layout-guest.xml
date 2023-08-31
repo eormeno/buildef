@@ -1,6 +1,6 @@
-<guest>
+<layout-guest>
     <container>
         <logo />
     </container>
-    <slot-main />
-</guest>
+    <slot />
+</layout-guest>
