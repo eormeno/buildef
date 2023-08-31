@@ -1,0 +1,15 @@
+<layout-guest>
+    <container-form action="register">
+        <input-text name="apellido" placeholder="Su apellido" label="Apellido" required="true" />
+        <input-text name="nombre" placeholder="Su nombre" label="Nombre" required="true" />
+        <input-text name="documento" placeholder="Su DNI" label="Documento" required="true" />
+        <input-select name="tema" label="Solicito publicar en el siguiente tema" required="true" source="temas" />
+        <input-email name="email" placeholder="Su email" label="Email" required="true" />
+        <input-password name="password" placeholder="Clave" label="Clave" required="true" />
+        <input-password name="confirm-password" placeholder="Confirme clave" label="Confirme su clave" required="true" />
+        <container layout="horizontal" align="right">
+            <button-link text="¿Estaba registrdo?" route="/login" />
+            <button-primary text="Registrarse" type="submit" />
+        </container>
+    </container-form>
+</layout-guest>

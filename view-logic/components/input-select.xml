@@ -1,0 +1,3 @@
+<input-select:input>
+	<param name="source" type="string" />
+</input-select:input>
