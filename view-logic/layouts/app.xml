@@ -1,0 +1,8 @@
+<app>
+    <app-header>
+        <slot-header/>
+    </app-header>
+    <app-main>
+        <slot-main/>
+    </app-main>
+</app>

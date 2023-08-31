@@ -1,0 +1,3 @@
+<check-box:input>
+	<param name="value" type="boolean" default="false" />
+</check-box:input>

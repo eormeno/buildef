@@ -1,10 +1,13 @@
-<b-guest>
-   <b-login title="Login page">
-      <b-form title="Login" submit="Login" action="login">
-         <b-input name="email" type="email" placeholder="Your email" label="Email" required="true" />
-         <b-input name="password" type="password" placeholder="Password" label="Password" required="true" />
-         <b-checkbox name="remember" label="Remember me" />
-         <b-button-secondary text="I forget the password" action="forguetPassword" />
-      </b-form>
-   </b-login>
-</b-guest>
+<guest>
+	<login title="Login page">
+		<form title="Login" action="login">
+			<input name="email" type="email" placeholder="Your email" label="Email" required="true" />
+			<input name="password" type="password" placeholder="Password" label="Password" required="true" />
+			<checkbox name="remember" label="Remember me" />
+			<container layout="horizontal" align="right">
+				<button-secondary text="I forget the password" action="forgetPassword" />
+				<button-primary text="Login" type="submit" />
+			</container>
+		</form>
+	</login>
+</guest>

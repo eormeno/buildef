@@ -1,0 +1,5 @@
+<text-input:input>
+	<param name="value" type="string" default="" />
+	<param name="placeholder" type="string" default="" />
+    <paran name="errorMessage" type="string" default="" />
+</text-input:input>

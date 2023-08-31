@@ -1,0 +1,11 @@
+<navigation>
+	<logo/>
+	<links>
+		<link name="Home" route="/" />
+		<link name="About" route="/about" />
+	</links>
+	<user-links>
+		<link name="Profile" route="/profile" />
+		<link name="Logout" route="/logout" />
+	</user-links>
+</navigation>
