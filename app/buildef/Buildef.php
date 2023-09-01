@@ -14,27 +14,47 @@ class Buildef
 
         $templatesFiles = self::getFiles($path, 'xml');
 
+        $parsedTemplates = ['classes' => [], 'instances' => []];
+
         foreach ($templatesFiles as $templateFile) {
             try {
-                $template = self::parseXmlFile($templateFile->getPathname());
-                $consoleOutput->writeln($template['name'] . ' is ' . $template['is']);
+                self::parseXmlFile($templateFile->getPathname(), $parsedTemplates);
             } catch (\Exception $e) {
                 $consoleOutput->writeln($e->getMessage());
             }
         }
+
+        $json = json_encode($parsedTemplates['instances'], JSON_PRETTY_PRINT);
+        $consoleOutput->writeln($json);
     }
 
-    private static function parseXmlFile($file)
+    private static function parseXmlFile($file, &$parsedTemplates)
     {
         $xml = simplexml_load_file($file);
-        $rootName = $xml->getName();
-        $attributeIs = $xml->attributes()['is'] ?? '(root)';
+        $name = $xml->getName();
 
-        $template = [
-            'name' => $rootName,
-            'is' => $attributeIs,
-        ];
-        return $template;
+        if (substr($name, 0, 6) === 'class-') {
+            $classInfo = [];
+            $name = substr($name, 6);
+
+            $isRootClass = $name === 'widget';
+            if ($isRootClass) {
+                $classInfo['root'] = true;
+            }
+            $extends = (string) $xml->attributes()['extends'] ?? "";
+            $abstract = (string) $xml->attributes()['abstract'] ?? "false";
+            if ($extends !== "") {
+                $classInfo['extends'] = substr($extends, 6);
+            }
+
+            if ($abstract === 'true' && !$isRootClass) {
+                $classInfo['abstract'] = true;
+            }
+
+            $parsedTemplates['classes'][$name] = $classInfo;
+        } else {
+            $parsedTemplates['instances'][] = $name;
+        }
     }
 
     private static function parseTemplateParams($xml)

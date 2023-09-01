@@ -1,3 +1,3 @@
-<form-container is="container">
+<class-form-container extends="class-container">
 	<param name="action" value="" required="true"/>
-</form-container>
+</class-form-container>

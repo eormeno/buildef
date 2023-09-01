@@ -1,4 +1,4 @@
-<general-layout is="layout">
+<class-general-layout extends="class-layout">
 	<container position="top">
 		<container orientation="horizontal">
 			<container position="left" h-size="10%">
@@ -22,4 +22,4 @@
 			</container>
 		</container>
 	</container>
-</general-layout>
+</class-general-layout>

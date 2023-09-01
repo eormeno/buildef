@@ -1,1 +1,1 @@
-<input-date is="input-text"/>
+<class-input-date extends="class-input-text"/>

@@ -1,1 +1,1 @@
-<button-primary is="button-action"/>
+<class-button-primary extends="class-button-action"/>

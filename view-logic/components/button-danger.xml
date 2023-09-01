@@ -1,1 +1,1 @@
-<button-danger is="button-action"/>
+<class-button-danger extends="class-button-action"/>

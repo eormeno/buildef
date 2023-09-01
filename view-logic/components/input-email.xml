@@ -1,1 +1,1 @@
-<input-email is="input-text"/>
+<class-input-email extends="class-input-text"/>

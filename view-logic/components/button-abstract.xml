@@ -1,6 +1,6 @@
-<button is="widget" abstract="true">
+<class-button extends="class-widget" abstract="true">
 	<param name="text" type="string" />
 	<param name="action" type="string" readonly="true" />
 	<param name="disabled" type="boolean" default="false" />
 	<param name="formId" type="string" readonly="true" />
-</button>
+</class-button>
