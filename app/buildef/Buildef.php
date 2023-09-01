@@ -24,7 +24,7 @@ class Buildef
             }
         }
 
-        $json = json_encode($parsedTemplates['instances'], JSON_PRETTY_PRINT);
+        $json = json_encode($parsedTemplates['classes'], JSON_PRETTY_PRINT);
         $consoleOutput->writeln($json);
     }
 

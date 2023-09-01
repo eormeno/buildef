@@ -1,7 +1,9 @@
 <class-input-text extends="class-input">
-	<param name="value" type="string" default="" />
+    <param name="value" type="string" default="" />
+    <param name="autofocus" type="boolean" default="false" />
+    <param name="autocomplete" type="boolean" default="false" />
     <param name="minLenght" type="integer" default="0" />
     <param name="maxLenght" type="integer" default="255" />
-	<param name="placeholder" type="string" default="" />
+    <param name="placeholder" type="string" default="" />
     <paran name="errorMessage" type="string" default="" />
 </class-input-text>

@@ -1,0 +1,3 @@
+<class-input-error extends="widget">
+    <param name="messages" type="array" />
+</class-input-error>
