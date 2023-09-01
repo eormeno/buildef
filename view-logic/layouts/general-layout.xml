@@ -1,0 +1,25 @@
+<general-layout>
+	<container position="top">
+		<container orientation="horizontal">
+			<container position="left" h-size="10%">
+				<slot name="app-icon" />
+			</container>
+			<container>
+				<slot name="navigation" />
+			</container>
+		</container>
+	</container>
+	<container position="left">
+		<slot name="menu" />
+	</container>
+	<container position="center">
+		<container orientation="vertical">
+			<container v-size="10%">
+				<slot name="footer" />
+			</container>
+			<container>
+				<slot name="main" />
+			</container>
+		</container>
+	</container>
+</general-layout>

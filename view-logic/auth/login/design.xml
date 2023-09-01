@@ -1,4 +1,4 @@
-<layout-guest>
+<guest-layout>
 	<container-form action="login">
 		<input-email name="email" placeholder="Your email" label="Email" required="true" />
 		<input-password name="password" placeholder="Password" label="Password" required="true" />
@@ -8,4 +8,4 @@
 			<button-primary text="Login" type="submit" />
 		</container>
 	</container-form>
-</layout-guest>
+</guest-layout>

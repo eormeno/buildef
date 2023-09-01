@@ -1,0 +1,8 @@
+<guest-layout:layout>
+    <container>
+        <container>
+            <logo />
+        </container>
+        <slot />
+    </container>
+</guest-layout:layout>

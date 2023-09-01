@@ -1,5 +1,8 @@
 <container>
-	<param name="layout" type="string" default="vertical" />
-	<param name="align" type="string" default="left" />
-	<slot max="*"/>
+    <param name="layout" type="string" default="vertical" />
+    <param name="align" type="string" default="left" />
+    <param name="h-size" type="string" default="100%" />
+    <param name="v-size" type="string" default="100%" />
+    <param name="position" type="string" default="center" />
+    <slot />
 </container>
