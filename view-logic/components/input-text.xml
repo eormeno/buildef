@@ -1,7 +1,7 @@
-<input-text:input>
+<input-text is="input">
 	<param name="value" type="string" default="" />
     <param name="minLenght" type="integer" default="0" />
     <param name="maxLenght" type="integer" default="255" />
 	<param name="placeholder" type="string" default="" />
     <paran name="errorMessage" type="string" default="" />
-</input-text:input>
+</input-text>

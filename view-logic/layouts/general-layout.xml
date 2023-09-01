@@ -1,4 +1,4 @@
-<general-layout>
+<general-layout is="layout">
 	<container position="top">
 		<container orientation="horizontal">
 			<container position="left" h-size="10%">

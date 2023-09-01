@@ -1,4 +1,4 @@
-<input>
+<input is="widget" abstract="true">
     <param name="name" type="string" readonly="true" />
     <param name="label" type="string" default="" />
     <param name="help" type="string" default="" />

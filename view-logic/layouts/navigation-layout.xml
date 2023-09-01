@@ -1,4 +1,4 @@
-<navigation-layout:layout>
+<navigation-layout is="layout">
 	<logo/>
 	<links>
 		<link name="Home" route="/" />
@@ -8,4 +8,4 @@
 		<link name="Profile" route="/profile" />
 		<link name="Logout" route="/logout" />
 	</user-links>
-</navigation-layout:layout>
+</navigation-layout>

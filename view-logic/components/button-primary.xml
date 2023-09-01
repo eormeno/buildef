@@ -1,1 +1,1 @@
-<button-primary:button-action/>
+<button-primary is="button-action"/>

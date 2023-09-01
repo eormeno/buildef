@@ -1,3 +1,3 @@
-<button-nav-link:button-link>
+<button-nav-link is="button-link">
 	<param name="active" type="boolean" default="false" />
-</button-nav-link:button-link>
+</button-nav-link>

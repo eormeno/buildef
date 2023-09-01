@@ -1,4 +1,4 @@
-<layout-guest>
+<guest-layout>
     <container-form action="register">
         <input-text name="apellido" placeholder="Su apellido" label="Apellido" required="true" />
         <input-text name="nombre" placeholder="Su nombre" label="Nombre" required="true" />
@@ -12,4 +12,4 @@
             <button-primary text="Registrarse" type="submit" />
         </container>
     </container-form>
-</layout-guest>
+</guest-layout>

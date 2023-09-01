@@ -1,8 +1,8 @@
-<guest-layout:layout>
+<guest-layout is="layout">
     <container>
         <container>
             <logo />
         </container>
         <slot />
     </container>
-</guest-layout:layout>
+</guest-layout>

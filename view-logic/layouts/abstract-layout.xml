@@ -1,4 +1,4 @@
-<layout>
+<layout is="widget" abstract="true">
     <param name="name" type="string" default="" />
     <slot />
 </layout>

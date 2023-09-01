@@ -1,4 +1,4 @@
-<button>
+<button is="widget" abstract="true">
 	<param name="text" type="string" />
 	<param name="action" type="string" readonly="true" />
 	<param name="disabled" type="boolean" default="false" />

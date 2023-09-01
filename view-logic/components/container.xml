@@ -1,4 +1,4 @@
-<container>
+<container is="widget">
     <param name="layout" type="string" default="vertical" />
     <param name="align" type="string" default="left" />
     <param name="h-size" type="string" default="100%" />
