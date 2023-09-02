@@ -33,18 +33,18 @@ class Buildef
         $xml = simplexml_load_file($file);
         $name = $xml->getName();
 
-        if (substr($name, 0, 6) === 'class-') {
+        if (substr($name, 0, 6) === 'class.') {
             $classInfo = [];
             $name = substr($name, 6);
 
-            $isRootClass = $name === 'widget';
+            $isRootClass = ($name === 'widget' || $name === 'change-parent');
             if ($isRootClass) {
                 $classInfo['root'] = true;
             }
             $extends = (string) $xml->attributes()['extends'] ?? "";
             $abstract = (string) $xml->attributes()['abstract'] ?? "false";
             if ($extends !== "") {
-                $classInfo['extends'] = substr($extends, 6);
+                $classInfo['extends'] = $extends;
             }
 
             if ($abstract === 'true' && !$isRootClass) {

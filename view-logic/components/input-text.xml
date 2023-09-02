@@ -1,4 +1,4 @@
-<class-input-text extends="class-input">
+<class.input-text extends="input">
     <param name="value" type="string" default="" />
     <param name="autofocus" type="boolean" default="false" />
     <param name="autocomplete" type="boolean" default="false" />
@@ -6,4 +6,4 @@
     <param name="maxLenght" type="integer" default="255" />
     <param name="placeholder" type="string" default="" />
     <paran name="errorMessage" type="string" default="" />
-</class-input-text>
+</class.input-text>

@@ -1,5 +1,5 @@
-<class-button extends="class-widget" abstract="true">
+<class.button extends="widget" abstract="true">
 	<param name="disabled" type="boolean" default="false" />
 	<param name="formId" type="string" readonly="true" />
     <slot />
-</class-button>
+</class.button>

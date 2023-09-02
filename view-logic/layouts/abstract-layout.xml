@@ -1,4 +1,4 @@
-<class-layout extends="class-widget" abstract="true">
+<class.layout extends="widget" abstract="true">
     <param name="name" type="string" default="" />
     <slot />
-</class-layout>
+</class.layout>

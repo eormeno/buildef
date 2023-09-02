@@ -1,0 +1,8 @@
+<class.container extends="widget">
+    <param name="layout" type="string" />
+    <param name="align" type="string" />
+    <param name="h-size" type="string" />
+    <param name="v-size" type="string" />
+    <param name="position" type="string" />
+    <slot />
+</class.container>

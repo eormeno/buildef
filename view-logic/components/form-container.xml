@@ -1,3 +1,0 @@
-<class-form-container extends="class-container">
-	<param name="action" value="" required="true"/>
-</class-form-container>

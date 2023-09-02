@@ -1,0 +1,14 @@
+<class.change-parent abstract="true">
+    <param name="merge" type="boolean" value="false"/>
+    <param name="attribute" type="string" required="true"/>
+    <param name="value" type="string" required="true"/>
+    <param name="var" type="string" value="null"/>
+    <param name="var-value" type="string" value="null"/>
+    <param name="logical-operator" type="string" value="null"/>
+    <param name="operator" type="enum" value="override">
+        <enum name="override"/>
+        <enum name="append"/>
+        <enum name="prepend"/>
+        <enum name="merge"/>
+    </param>
+</class.change-parent>

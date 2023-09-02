@@ -1,8 +1,8 @@
-<class-app-layout extends="class-layout">
+<class.app-layout extends="layout">
     <app-header>
         <slot-header/>
     </app-header>
     <app-main>
         <slot-main/>
     </app-main>
-</class-app-layout>
+</class.app-layout>

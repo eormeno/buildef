@@ -1,12 +1,17 @@
-<class-guest-layout extends="class-layout">
-    <container expandToScreen="true" layout="vertical" align="center">
+<class.guest-layout extends="layout">
+    <container>
+        <expand-to-screen/>
+        <verticalize/>
+        <center-items/>
         <container>
             <button-link route="/">
                 <logo />
             </button-link>
         </container>
-        <container width="auto" overflow="hidden">
+        <container>
+            <set-auto-width/>
+            <set-overflow-hidden/>
             <slot name="content" />
         </container>
     </container>
-</class-guest-layout>
+</class.guest-layout>

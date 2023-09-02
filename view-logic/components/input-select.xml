@@ -1,3 +1,3 @@
-<class-input-select extends="class-input">
+<class.input-select extends="input">
 	<param name="source" type="string" />
-</class-input-select>
+</class.input-select>
