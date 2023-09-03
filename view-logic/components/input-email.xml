@@ -1,1 +1,5 @@
-<class.input-email extends="input-text"/>
+<class.input-email extends="input-text">
+    <constructor>
+        <assign param="type" value="email" />
+    </constructor>
+</class.input-email>

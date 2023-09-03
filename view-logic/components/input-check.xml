@@ -1,3 +1,6 @@
 <class.input-check extends="input">
 	<param name="value" type="boolean" default="false" />
+    <constructor>
+        <assign param="type" value="checkbox" />
+    </constructor>
 </class.input-check>

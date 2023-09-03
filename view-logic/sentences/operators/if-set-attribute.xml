@@ -1,0 +1,6 @@
+<class.if-set-attribute extends="change-parent">
+    <constructor>
+        <require params="var, var-value, attribute, attribute-value, operator"/>
+        <assign param="action" value="override"/>
+    </constructor>
+</class.if-set-attribute>

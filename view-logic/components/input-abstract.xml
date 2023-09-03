@@ -1,4 +1,5 @@
 <class.input extends="widget" abstract="true">
+    <param name="type" type="string" />
     <param name="name" type="string" readonly="true" />
     <param name="label" type="string" default="" />
     <param name="required" type="boolean" default="false" />
