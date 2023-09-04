@@ -1,28 +1,30 @@
 <div>
-    <label>
-        <switch-element-on-var var="label" />
-        <set-attribute attribute="for" value="name" />
-        <set-attribute attribute="class" value="style:input-text-label" />
-        <slot>label</slot>
-    </label>
+	<label>
+		<set-style value="input-text-label" />
+		<switch-element-on-var var="label" />
+		<set-attribute attribute="for" value="name" />
+		<slot>label</slot>
+	</label>
 
-    <input>
-    <set-attribute attribute="type" value="text" />
-    <set-attribute attribute="name" value="name" />
-    <set-attribute attribute="value" value="value" />
-    <set-attribute attribute="class" value="style:input-text-input" />
-    <set-attribute attribute="placeholder" value="placeholder" />
-    <switch-attribute-on-var var="readonly" attribute="readonly" />
-    <switch-attribute-on-var var="autofocus" attribute="autofocus" />
-    <switch-attribute-on-var var="disabled" attribute="disabled" />
-    <switch-attribute-on-var var="required" attribute="required" />
-    </input>
-    <span>
-        <switch-element-on-var var="required" />
-        <set-attribute attribute="class" value="style:input-text-required" />
-        <slot>*</slot>
-    </span>
-    <input-error messages="error-messages" class="mt-2">
-        <switch-element-on-var var="error-messages" />
-    </input-error>
+	<input>
+	<set-style value="input-text-input" />
+	<set-attribute attribute="type" value="text" />
+	<set-attribute attribute="name" value="name" />
+	<set-attribute attribute="value" value="value" />
+	<set-attribute attribute="placeholder" value="placeholder" />
+	<switch-attribute-on-var var="readonly" attribute="readonly" />
+	<switch-attribute-on-var var="autofocus" attribute="autofocus" />
+	<switch-attribute-on-var var="disabled" attribute="disabled" />
+	<switch-attribute-on-var var="required" attribute="required" />
+	</input>
+
+	<span>
+		<set-style value="input-text-required" />
+		<switch-element-on-var var="required" />
+		<slot>*</slot>
+	</span>
+
+	<input-error messages="error-messages" class="mt-2">
+		<switch-element-on-var var="error-messages" />
+	</input-error>
 </div>
