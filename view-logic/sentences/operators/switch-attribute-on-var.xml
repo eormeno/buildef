@@ -1,0 +1,12 @@
+<class.switch-attribute-on-var extends="if-var">
+    <constructor>
+        <super/>
+        <require params="attribute"/>
+    </constructor>
+    <then>
+        <add-attribute attribute="attribute" value="attribute-value"/>
+    </then>
+    <else>
+        <remove-attribute attribute="attribute"/>
+    </else>
+</class.switch-attribute-on-var>

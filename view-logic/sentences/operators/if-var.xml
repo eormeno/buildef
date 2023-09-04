@@ -1,0 +1,8 @@
+<class.if-var extends="change-parent">
+    <constructor>
+        <require params="var"/>
+        <assign param="operator" value="equals"/>
+        <assign param="var-value" value="true"/>
+        <assign param="action" value="do"/
+    </constructor>
+</class.if-var>

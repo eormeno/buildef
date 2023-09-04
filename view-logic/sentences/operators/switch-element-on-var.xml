@@ -1,0 +1,6 @@
+<class.switch-element-on-var extends="if-var">
+    <add-me/>
+    <else>
+        <remove-me/>
+    </else>
+</class.switch-element-on-var>

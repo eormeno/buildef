@@ -1,8 +1,8 @@
 <class.change-parent abstract="true">
-    <param name="attribute" type="string" required="true"/>
-    <param name="attribute-value" type="string" required="true"/>
-    <param name="var" type="string" value="null"/>
-    <param name="var-value" type="string" value="null"/>
+    <param name="attribute" type="string"/>
+    <param name="attribute-value" type="string"/>
+    <param name="var" type="string"/>
+    <param name="var-value" type="string"/>
     <param name="operator" type="enum">
         <enum name="equals"/>
         <enum name="not-equals"/>
@@ -12,10 +12,13 @@
         <enum name="less-than-or-equals"/>
     </param>
     <param name="action" type="enum" value="override">
+        <enum name="do"/>
         <enum name="override"/>
         <enum name="append"/>
         <enum name="prepend"/>
         <enum name="merge"/>
         <enum name="remove"/>
     </param>
+    <slot />
+    <else />
 </class.change-parent>
