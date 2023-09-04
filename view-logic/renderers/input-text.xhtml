@@ -1,19 +1,25 @@
 <div>
-    <label for="id" class='block font-medium text-sm text-gray-700 dark:text-gray-300'>
+    <label>
         <switch-element-on-var var="label" />
+        <set-attribute attribute="for" value="name" />
+        <set-attribute attribute="class" value="style:input-text-label" />
         <slot>label</slot>
     </label>
 
-    <input type="text" name="name" value="value" placeholder="placeholder"
-        class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full">
-
+    <input>
+    <set-attribute attribute="type" value="text" />
+    <set-attribute attribute="name" value="name" />
+    <set-attribute attribute="value" value="value" />
+    <set-attribute attribute="class" value="style:input-text-input" />
+    <set-attribute attribute="placeholder" value="placeholder" />
     <switch-attribute-on-var var="readonly" attribute="readonly" />
     <switch-attribute-on-var var="autofocus" attribute="autofocus" />
     <switch-attribute-on-var var="disabled" attribute="disabled" />
     <switch-attribute-on-var var="required" attribute="required" />
     </input>
-    <span class='text-red-600 dark:text-red-400'>
+    <span>
         <switch-element-on-var var="required" />
+        <set-attribute attribute="class" value="style:input-text-required" />
         <slot>*</slot>
     </span>
     <input-error messages="error-messages" class="mt-2">
