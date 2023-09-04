@@ -1,7 +1,7 @@
 <class.set-attribute extends="change-parent">
     <constructor>
         <require params="attribute, attribute-value"/>
-        <param name="value" value="attribute-value"/>
-        <param name="action" value="override"/>
+        <assign param="value" value="attribute-value"/>
+        <assign param="action" value="override"/>
     </constructor>
 </class.set-attribute>
