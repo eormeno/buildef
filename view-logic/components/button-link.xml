@@ -1,3 +1,0 @@
-<class.button-link extends="button">
-	<param name="route" type="string" />
-</class.button-link>

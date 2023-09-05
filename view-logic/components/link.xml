@@ -1,0 +1,6 @@
+<class.link extends="widget">
+	<param name="route" type="string" default="#" />
+	<param url="url" type="string" default="#" />
+	<param name="target" type="string"/>
+	<slot/>
+</class.link>

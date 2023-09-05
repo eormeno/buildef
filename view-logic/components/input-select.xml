@@ -1,3 +1,15 @@
-<class.input-select extends="input">
-	<param name="source" type="string" />
-</class.input-select>
+<class.select extends="input">
+    <param name="data-source" type="string" />
+    <param name="multiple" type="boolean" default="false" />
+    <param name="key" type="string" default="id" />
+    <param name="value" type="string" default="name" />
+    <param name="selected-key-value" type="string" />
+    <on-fetched source="data-source">
+        <clear />
+        <iterator source="data-source" var="item">
+            <option key="item.key" value="item.value">
+                <switch-attribute-on-var var="selected-key-value" value="item.key" attribute="selected" />
+            </option>
+        </iterator>
+    </on-fetched>
+</class.select>

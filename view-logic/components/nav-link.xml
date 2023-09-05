@@ -1,0 +1,3 @@
+<class.nav-link extends="link">
+	<param name="active" type="boolean" default="false" />
+</class.nav-link>

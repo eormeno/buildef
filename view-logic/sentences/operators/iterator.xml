@@ -1,0 +1,5 @@
+<class.iterator>
+    <param name="source" type="array" />
+    <param name="var" type="string" />
+    <slot />
+</class.iterator>
