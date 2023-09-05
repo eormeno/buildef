@@ -1,12 +1,22 @@
-<body class="font-sans text-gray-900 antialiased">
-	<div class="min-h-screen flex flex-col items-center pt-6 bg-gray-100 dark:bg-gray-900">
-		<div>
-			<a href="/">
-				<x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-			</a>
-		</div>
-		<div class="w-auto mt-6 px-6 py-4 bg-white dark:bg-gray-800 shadow-md overflow-hidden rounded-lg">
-			<slot name="content" />
-		</div>
-	</div>
+<body>
+    <set-style value="body" />
+    <div>
+        <set-style value="centered-container" />
+        <div>
+            <a href="/">
+                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+            </a>
+        </div>
+        <div>
+            <set-style value="background-color" />
+            <set-style value="mt-6" />
+            <set-style value="px-6" />
+            <set-style value="py-4" />
+            <set-style value="auto-width" />
+            <set-style value="rounded" />
+            <set-style value="shadow" />
+            <set-style value="overflow-hidden" />
+            <slot-content />
+        </div>
+    </div>
 </body>

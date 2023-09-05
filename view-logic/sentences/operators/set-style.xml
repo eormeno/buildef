@@ -2,7 +2,7 @@
     <constructor>
         <require params="attribute-value"/>
         <assign param="value" value="attribute-value"/>
-        <assign param="action" value="override"/>
+        <assign param="action" value="merge"/>
         <assign param="attribute" value="class"/>
     </constructor>
 </class.set-attribute>
